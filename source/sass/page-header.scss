@@ -1,0 +1,112 @@
+body {
+  background-color: #f3f3f3;
+}
+.page-header {
+  position: relative;
+
+  margin: 0 auto;
+  padding: 0 15px;
+  padding-top: 27px;
+
+  box-sizing: border-box;
+
+  background-image: url("../img/logo_mobile.png"), url("../img/header-background_mobile.png");
+  background-repeat: no-repeat;
+  background-size: auto, contain;
+  background-position: center 25px, top;
+}
+.nav__button {
+  width: 22px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 68px;
+
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/menu-button_mobile.png");
+
+  cursor: pointer;
+}
+.nav__list {
+  position: absolute;
+  top: 45px;
+  left: 15px;
+
+  display: none;
+  width: 91%;
+  margin: 0;
+  padding: 70px 0;
+
+  text-align: center;
+
+  background: #0d3351;
+  list-style: none;
+}
+.nav__list.show {
+  display: block;
+}
+.nav__item {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
+}
+.nav__link {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto slab";
+  font-weight: 400;
+  font-size: 18px;
+
+  color: #ffffff;
+
+  text-decoration: none;
+  cursor: pointer;
+}
+.page-header__caption {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+
+  font-family: "Roboto slab";
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+.pag-header__title {
+  width: 245px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 43px;
+
+  font-family: "Roboto slab";
+  font-weight: 400;
+  font-size: 50px;
+  text-align: center;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+.page-header__button {
+  display: block;
+  width: 202px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  padding: 16px 49px;
+
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 48px;
+
+  color: #ffffff;
+
+  border: none;
+  background-color: #33c7fd;
+
+  cursor: pointer;
+}
+.page-header__img {
+  display: block;
+  margin: 0 auto;
+}
