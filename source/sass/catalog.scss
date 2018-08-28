@@ -1,0 +1,172 @@
+.catalog {
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.catalog__caption {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+
+  font-family: "Roboto slab";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 48px;
+  text-align: center;
+}
+.catalog__sorting {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 30px;
+
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+.catalog__select {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  font-style: italic;
+
+  border: none;
+  background: transparent;
+}
+.catalog__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+.catalog__item {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+  padding-bottom: 42px;
+  margin-bottom: 13px;
+
+  background-color: #ffffff;
+}
+.catalog__item-stock {
+  position: absolute;
+  top: -7px;
+  right: 23px;
+}
+.catalog__stock-text {
+  position: absolute;
+  top: 20px;
+  right: 37px;
+
+  width: 60px;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #ffffff;
+}
+.catalog__subtitle {
+  position: relative;
+
+  margin: 0 23px;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  font-family: "Roboto slab";
+  font-weight: 400;
+  font-size: 18px;
+  color: #00a2dd;
+  &::after {
+    position: absolute;
+    bottom: 7px;
+    content: "";
+
+    width: 0;
+	  height: 0;
+	  border-top: 4px solid transparent;
+	  border-left: 8px solid #00a2dd;
+	  border-bottom: 4px solid transparent;
+  }
+}
+.catalog__item-route, .catalog__item-duration{
+  margin: 0 23px;
+  padding: 0;
+
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.item-route__subtitle, .item-duration__subtitle {
+  font-weight: 700;
+}
+.catalog__item-price {
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+  margin-left: 23px;
+
+  font-family: "Roboto slab";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 48px;
+  color: #0d3351;
+}
+.catalog__old-cost {
+  font-size: 18px;
+  color: #7a8f9f;
+
+  text-decoration: line-through;
+}
+.catalog__item-foto {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+}
+.catalog__button {
+  position: relative;
+
+  display: block;
+  max-width: 202px;
+  margin: 0 auto;
+  margin-top: 7px;
+  margin-bottom: 31px;
+  padding: 0 17px;
+  padding-left: 38px;
+  padding-right: 49px;
+
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 48px;
+  color: #ffffff;
+
+  border: none;
+  background: #33c7fd;
+
+  cursor: pointer;
+  &::after {
+    position: absolute;
+    top: 50%;
+    content: "";
+    transform: translateY(-50%);
+
+    width: 0;
+	  height: 0;
+	  border-left: 4px solid transparent;
+	  border-right: 4px solid transparent;
+	  border-top: 8px solid #ffffff;
+  }
+}
