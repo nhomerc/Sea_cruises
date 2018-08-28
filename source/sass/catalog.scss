@@ -54,7 +54,7 @@
   background-color: #ffffff;
 }
 .catalog__stock-text {
-  width: 60px;
+  width: 70px;
   margin: 0 auto;
   padding: 0;
 
@@ -64,6 +64,7 @@
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
+  word-wrap: break-word;
 
   color: #ffffff;
 }
@@ -181,15 +182,17 @@
   box-sizing: border-box;
   &::after {
     position: absolute;
-    content: url("../img/red-layer_mobile.png");
     top: 100%;
+
+    content: url("../img/red-layer_mobile.png");
   }
 }
 .catalog__text-wrapper--blue {
   background-color: #33c7fe;
   &::after {
     position: absolute;
-    content: url("../img/blue-layer_mobile.png");
     top: 100%;
+
+    content: url("../img/blue-layer_mobile.png");
   }
 }
