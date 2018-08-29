@@ -12,35 +12,60 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__nav">
-      <button class="nav__button" type="button">
-        <span class="visually-hidden">Меню</span>
-      </button>
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link">Популярные маршруты</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link">Расписание рейсов</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link">Забронированные рейсы</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link">Вход для партнеров</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link">О компании</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link">Контакты</a>
-        </li>
-      </ul>
+    <div class="page-header__wrapper">
+      <div class="page-header__nav">
+        <div class="page-header__head">
+          <button class="nav__button" type="button">
+            <span class="visually-hidden">Меню</span>
+          </button>
+          <div class="page-header__login-wrapper">
+            <select class="page-header__login hidden">
+              <option value="user">Личный кабинет</option>
+              <option value="reg">Регистрация</option>
+            </select>
+          </div>
+          <div class="page-header__currency-wrapper">
+            <select class="page-header__currency hidden">
+              <option value="ruble">Рубль</option>
+              <option value="dollar">Доллар</option>
+            </select>
+          </div>
+          <select class="page-header__language hidden">
+            <option value="ru">Ru</option>
+            <option value="en">Eng</option>
+          </select>
+          <div class="pag-header__support hidden">
+            <p class="page-header__phone">8 800 500-61-05</p>
+            <p class="page-header__support-text">Круглосуточная поддержка</p>
+          </div>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link">Популярные маршруты</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link">Расписание рейсов</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link">Забронированные рейсы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link">Вход для партнеров</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link">О компании</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <h2 class="page-header__caption">Морские прогулки</h2>
+      <h1 class="page-header__title">По чёрному морю</h1>
+      <button class="page-header__button" type="button">Выбрать круиз</button>
+      <img class="page-header__img" src="img/header-figure_mobile.png" alt="фигура">
     </div>
-    <h2 class="page-header__caption">Морские прогулки</h2>
-    <h1 class="pag-header__title">По чёрному морю</h1>
-    <button class="page-header__button" type="button">Выбрать круиз</button>
-    <img class="page-header__img" src="img/header-figure_mobile.png" alt="фигура">
+
   </header>
 
   <main class="page-main">
@@ -93,36 +118,84 @@
         </li>
       </ul>
       <button class="catalog__button" type="button">Больше круизов&nbsp;</button>
+
+      <div class="catalog-popup hidden">
+        <button class="catalog-popup__button" type="button"></button>
+        <div class="catalog-popup__wrapper">
+          <div class="popup-images">
+            <img class="popup-main" src="img/popup-main_tablet.png">
+            <ul class="popup-images-list">
+              <li class="popup-images-item">
+                <img class="popup-image" src="img/popup-first_tablet.png">
+              </li>
+              <li class="popup-images-item">
+                <img class="popup-image" src="img/popup-second_tablet.png">
+              </li>
+              <li class="popup-images-item">
+                <img class="popup-image" src="img/popup-third_tablet.png">
+              </li>
+              <li class="popup-images-item">
+                <img class="popup-image" src="img/popup-fourth_tablet.png">
+              </li>
+            </ul>
+          </div>
+          <div class="catalog-popup__description">
+            <h2 class="catalog-popup__caption">Морская прогулка в Абрау-Дюрсо</h2>
+            <p class="catalog-popup__item-route"><span class="item-route__subtitle">Маршрут: </span>Сочи-Абрау-Дюрсо</p>
+            <p class="catalog-popup__item-duration"><span class="item-duration__subtitle">Продолжительность: </span>11 ч.
+              0 мин.</p>
+            <p class="catalog-popup__item-schedule"><span class="item-schedule__subtitle">Расписание: <br></span>Отправление
+              из Сочи: ежедневно в 10:00, 11:40, 13:20, 15:00, 16:40<br> Отправление из Абрау-Дюрсо: ежедневно в 12:25, 14:05,
+              15:45, 17:25, 19:05<br> Продолжительность: 11 часов 0 мин., из которых 10 часов - морская прогулка (туда и
+              обратно), от 1 часа 30 мин. - свободное время в Ласточкином гнезде<br> Причал отправления/прибытия:<br> набережная
+              Ленина, причал №8, теплоход "Азов"
+            </p>
+            <p class="catalog-popup__item-price">14 800 руб.</p>
+            <button class="catalog-popup__button-reservation" type="button">Бронирование</button>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="page-footer">
-    <h2 class="page-footer__caption">Будь на связи:</h2>
-    <ul class="page-footer__social-list">
-      <li class="page-footer__social-item">
-        <a class="page-footer__social-link" href="#">
-          <img class="page-footer__social-img" src="img/vk_mobile.png" alt="Вконтакте">
-        </a>
-      </li>
-      <li class="page-footer__social-item">
-        <a class="page-footer__social-link" href="#">
-          <img class="page-footer__social-img" src="img/ok_mobile.png" alt="Одноклассники">
-        </a>
-      </li>
-      <li class="page-footer__social-item">
-        <a class="page-footer__social-link" href="#">
-          <img class="page-footer__social-img" src="img/youtube_mobile.png" alt="Ютуб">
-        </a>
-      </li>
-      <li class="page-footer__social-item">
-        <a class="page-footer__social-link" href="#">
-          <img class="page-footer__social-img" src="img/insta_mobile.png" alt="Инстаграмм">
-        </a>
-      </li>
-    </ul>
-    <p class="page-footer__phone">8 800 500-61-05</p>
-    <p class="page-footer__support">Круглосуточная поддержка</p>
-    <p class="page-footer__copyright">&copy; 2016 ООО "Городские круизы"</p>
+    <div class="page-footer__wrapper">
+      <ul class="page-footer__list hidden">
+        <li class="page-footer__item">Вход для парнтнеров</li>
+        <li class="page-footer__item">О компании</li>
+        <li class="page-footer__item">Контакты</li>
+      </ul>
+      <div class="page-footer__social-wrapper">
+        <h2 class="page-footer__caption">Будь на связи:</h2>
+        <ul class="page-footer__social-list">
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link" href="#">
+              <img class="page-footer__social-img" src="img/vk_mobile.png" alt="Вконтакте">
+            </a>
+          </li>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link" href="#">
+              <img class="page-footer__social-img" src="img/ok_mobile.png" alt="Одноклассники">
+            </a>
+          </li>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link" href="#">
+              <img class="page-footer__social-img" src="img/youtube_mobile.png" alt="Ютуб">
+            </a>
+          </li>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link" href="#">
+              <img class="page-footer__social-img" src="img/insta_mobile.png" alt="Инстаграмм">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__support-wrapper">
+        <p class="page-footer__phone">8 800 500-61-05</p>
+        <p class="page-footer__support">Круглосуточная поддержка</p>
+        <p class="page-footer__copyright">&copy; 2016 ООО "Городские круизы"</p>
+      </div>
+    </div>
   </footer>
 </body>
 <script src="js/script.js"></script>

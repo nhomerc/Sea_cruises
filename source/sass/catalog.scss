@@ -196,3 +196,25 @@
     content: url("../img/blue-layer_mobile.png");
   }
 }
+@media (min-width: 768px) {
+  .catalog {
+    min-width: 750px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .catalog__caption {
+    font-size: 26px;
+  }
+  .catalog__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .catalog__item {
+    width: 46%;
+    margin-bottom: 25px;
+  }
+  .catalog__button {
+    margin-bottom: 62px;
+  }
+}

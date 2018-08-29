@@ -53,3 +53,38 @@
 
   font-size: 14px;
 }
+@media (min-width: 768px) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 58%;
+    min-width: 750px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    box-sizing: border-box;
+  }
+  .page-footer__list.hidden {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+
+    list-style: none;
+  }
+  .page-footer__caption {
+    text-align: left;
+  }
+  .page-footer__support-wrapper {
+    text-align: left;
+  }
+  .page-footer__phone, .page-footer__support {
+    line-height: 24px;
+  }
+}

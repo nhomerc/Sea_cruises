@@ -75,7 +75,7 @@ body {
   font-size: 20px;
   text-align: center;
 }
-.pag-header__title {
+.page-header__title {
   width: 245px;
   margin: 0 auto;
   padding: 0;
@@ -132,10 +132,12 @@ body {
   .page-header__wrapper {
     position: relative;
 
-    width: 57.69%;
+    width: 58%;
     min-width: 750px;
     margin: 0 auto;
     padding: 0 15px;
+
+    box-sizing: border-box;
   }
   .page-header__head {
     display: flex;
@@ -220,96 +222,20 @@ body {
     color: #0d3351;
   }
   .nav__button {
-    width: 22px;
-    height: 16px;
     margin: auto 0;
     padding: 0;
-    margin-right: 175px;
-
-    border: none;
-    background-color: transparent;
-    background-image: url("../img/menu-button_mobile.png");
-
-    cursor: pointer;
+    margin-right: 23%;
   }
   .nav__list {
-    position: absolute;
-
-    display: none;
     width: 420px;
-    margin: 0;
-    padding: 70px 0;
-
-    text-align: center;
-
-    background: #0d3351;
-    list-style: none;
-  }
-  .nav__list.show {
-    display: block;
-  }
-  .nav__item {
-    margin: 0;
-    padding: 0;
-    padding-bottom: 30px;
-  }
-  .nav__link {
-    margin: 0;
-    padding: 0;
-
-    font-family: "Roboto slab";
-    font-weight: 400;
-    font-size: 18px;
-
-    color: #ffffff;
-
-    text-decoration: none;
-    cursor: pointer;
   }
   .page-header__caption {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 15px;
-
-    font-family: "Roboto slab";
-    font-weight: 400;
     font-size: 26px;
-    text-align: center;
   }
-  .pag-header__title {
-    width: 750px;
-    margin: 0 auto;
-    padding: 0;
-    margin-bottom: 43px;
+  .page-header__title {
+    width: 720px;
 
-    font-family: "Roboto slab";
-    font-weight: 400;
     font-size: 72px;
-    text-align: center;
-    line-height: 48px;
-    text-transform: uppercase;
-  }
-  .page-header__button {
-    display: block;
-    width: 202px;
-    margin: 0 auto;
-    margin-bottom: 24px;
-    padding: 16px 49px;
-
-    font-family: "Raleway";
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 48px;
-
-    color: #ffffff;
-
-    border: none;
-    background-color: #33c7fd;
-
-    cursor: pointer;
-  }
-  .page-header__img {
-    display: block;
-    margin: 0 auto;
+    letter-spacing: -1.9px;
   }
 }
