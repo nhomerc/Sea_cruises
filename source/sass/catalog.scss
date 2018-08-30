@@ -107,7 +107,7 @@
 .item-route__subtitle, .item-duration__subtitle {
   font-weight: 700;
 }
-.catalog__item-price {
+.catalog__item-price, {
   margin: 0;
   padding: 0;
   margin-top: 15px;
@@ -216,5 +216,142 @@
   }
   .catalog__button {
     margin-bottom: 62px;
+  }
+  .catalog-popup {
+    position: absolute;
+    top: 353px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: none;
+    width: 721px;
+    margin: 0;
+    padding: 0;
+    padding-top: 24px;
+    padding-bottom: 74px;
+    padding-left: 33px;
+    padding-right: 25px;
+    z-index: 1000;
+
+    box-sizing: border-box;
+    background-color: #ffffff;
+  }
+  .catalog-popup__button {
+    display: block;
+    width: 15px;
+    height: 17px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 58px;
+    margin-left: auto;
+
+    background-color: transparent;
+    background-image: url("../img/close_tablet.png");
+    border: none;
+
+    cursor: pointer;
+  }
+  .catalog-popup__wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-width: 656px;
+    margin: 0 auto;
+    padding: 0;
+    padding-left: 30px;
+
+    box-sizing: border-box;
+  }
+  .popup-images {
+    display: flex;
+    flex-direction: column;
+    min-width: 282px;
+  }
+  .popup-images-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+
+    list-style: none;
+  }
+  .catalog-popup__description {
+    max-width: 314px;
+  }
+  .catalog-popup__caption {
+    width: 190px;
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto slab";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    word-wrap: break-word;
+    letter-spacing: 0.9px;
+
+    color: #00a2dd;
+  }
+  .catalog-popup__item-route, .catalog-popup__item-duration, .catalog-popup__item-schedule {
+    width: 313px;
+    margin: 0;
+    padding: 0;
+
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    word-wrap: break-word;
+
+    color: #0d3351;
+  }
+  .catalog-popup__item-duration {
+    margin-bottom: 13px;
+  }
+  .item-schedule__subtitle {
+    font-weight: 700;
+  }
+  .catalog-popup__item-price {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 19px;
+    margin-top: 39px;
+
+    font-family: "Roboto slab";
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 48px;
+    color: #0d3351;
+  }
+  .catalog-popup__button-reservation {
+    margin: 0;
+    padding: 17px 48px;
+
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #ffffff;
+    background-color: #33c7fd;
+    border: none;
+
+    cursor: pointer;
+  }
+  .show {
+    display: block;
+  }
+  .overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 10; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
   }
 }
