@@ -79,41 +79,97 @@
         </select>
       </p>
       <ul class="catalog__list">
+
         <li class="catalog__item">
           <div class="catalog__text-wrapper catalog__text-wrapper--blue">
             <p class="catalog__stock-text">Хит продаж</p>
           </div>
-          <img class="catalog__item-foto" src="img/Anapa_mobile.png" alt="Морской круиз в Анапу">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/Anapa_desktop.png">
+            <source media="(min-width: 768px)" srcset="img/Anapa_tablet.png">
+            <img class="catalog__item-foto" src="img/Anapa_mobile.png" alt="Морской круиз в Анапу">
+          </picture>
           <h3 class="catalog__subtitle">Морской круиз<br> в Анапу&nbsp;<a class="catalog__subtitle-link" href="#"></a></h3>
           <p class="catalog__item-route"><span class="item-route__subtitle">Маршрут: </span>Сочи-Лазаревское-Геленджик-Анапа</p>
           <p class="catalog__item-duration"><span class="item-duration__subtitle">Продолжительность: </span>10 ч. 0 мин.</p>
           <p class="catalog__item-price">49 000 руб.</p>
         </li>
-        <li class="catalog__item">
+        <li class="catalog__item hidden">
           <div class="catalog__text-wrapper">
             <p class="catalog__stock-text">Акция</p>
           </div>
-          <img class="catalog__item-foto" src="img/Adler_mobile.png" alt="Морской круиз в Анапу">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/Adler_desktop.png">
+            <source media="(min-width: 768px)" srcset="img/Adler_tablet.png">
+            <img class="catalog__item-foto" src="img/Adler_mobile.png" alt="Обзорная морская прогулка с экскурсией">
+          </picture>
           <h3 class="catalog__subtitle">Обзорная морская прогулка с экскурсией&nbsp;<a class="catalog__subtitle-link" href="#"></a></h3>
           <p class="catalog__item-route"><span class="item-route__subtitle">Маршрут: </span>Сочи-Адлер-Сочи (без высадки)</p>
           <p class="catalog__item-duration"><span class="item-duration__subtitle">Маршрут: </span>1 ч. 0 мин.</p>
           <p class="catalog__item-price">5 000 руб. <span class="catalog__old-cost">15 000 руб.</span></p>
         </li>
-        <li class="catalog__item">
+        <li class="catalog__item hidden">
           <div class="catalog__text-wrapper">
             <p class="catalog__stock-text">Скидка 10%</p>
           </div>
-          <img class="catalog__item-foto" src="img/Tuapse_mobile.png" alt="Морская прогулка в Геленджик">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/Tuapse_desktop.png">
+            <source media="(min-width: 768px)" srcset="img/Tuapse_tablet.png">
+            <img class="catalog__item-foto" src="img/Tuapse_mobile.png" alt="Морская прогулка в Геленджик">
+          </picture>
           <h3 class="catalog__subtitle">Морская прогулка<br> в Геленджик&nbsp;<a class="catalog__subtitle-link" href="#"></a></h3>
           <p class="catalog__item-route"><span class="item-route__subtitle">Маршрут: </span>Сочи-Туапсе-Геленджик</p>
           <p class="catalog__item-duration"><span class="item-duration__subtitle">Маршрут: </span>12 ч. 30 мин.</p>
           <p class="catalog__item-price">7 000 руб. <span class="catalog__old-cost">10 000 руб.</span></p>
         </li>
+        <div class="catalog__desktop hidden">
+          <li class="catalog__item">
+            <div class="catalog__text-wrapper">
+              <p class="catalog__stock-text">Акция</p>
+            </div>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/Adler_desktop.png">
+              <source media="(min-width: 768px)" srcset="img/Adler_tablet.png">
+              <img class="catalog__item-foto" src="img/Adler_mobile.png" alt="Обзорная морская прогулка с экскурсией">
+            </picture>
+            <h3 class="catalog__subtitle">Обзорная морская прогулка с экскурсией&nbsp;<a class="catalog__subtitle-link" href="#"></a></h3>
+            <p class="catalog__item-route"><span class="item-route__subtitle">Маршрут: </span>Сочи-Адлер-Сочи (без высадки)</p>
+            <p class="catalog__item-duration"><span class="item-duration__subtitle">Маршрут: </span>1 ч. 0 мин.</p>
+            <p class="catalog__item-price">5 000 руб. <span class="catalog__old-cost">15 000 руб.</span></p>
+          </li>
+          <li class="catalog__item">
+            <div class="catalog__text-wrapper">
+              <p class="catalog__stock-text">Скидка 10%</p>
+            </div>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/Tuapse_desktop.png">
+              <source media="(min-width: 768px)" srcset="img/Tuapse_tablet.png">
+              <img class="catalog__item-foto" src="img/Tuapse_mobile.png" alt="Морская прогулка в Геленджик">
+            </picture>
+            <h3 class="catalog__subtitle">Морская прогулка<br> в Геленджик&nbsp;<a class="catalog__subtitle-link" href="#"></a></h3>
+            <p class="catalog__item-route"><span class="item-route__subtitle">Маршрут: </span>Сочи-Туапсе-Геленджик</p>
+            <p class="catalog__item-duration"><span class="item-duration__subtitle">Маршрут: </span>12 ч. 30 мин.</p>
+            <p class="catalog__item-price">7 000 руб. <span class="catalog__old-cost">10 000 руб.</span></p>
+          </li>
+        </div>
         <li class="catalog__item">
-          <img class="catalog__item-foto" src="img/Sochi_mobile.png" alt="Морской круиз в Новороссийск">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/Sochi_desktop.png">
+            <source media="(min-width: 768px)" srcset="img/Sochi_tablet.png">
+            <img class="catalog__item-foto" src="img/Sochi_mobile.png" alt="Морской круиз в Новороссийск">
+          </picture>
           <h3 class="catalog__subtitle">Морской круиз в Новороссийск&nbsp;<a class="catalog__subtitle-link" href="#"></a></h3>
           <p class="catalog__item-route"><span class="item-route__subtitle">Маршрут: </span>Сочи-Геленджик-Новороссийск-Геленджик-Сочи</p>
           <p class="catalog__item-duration"><span class="item-duration__subtitle">Маршрут: </span>13 ч. 0 мин.</p>
+          <p class="catalog__item-price">14 800 руб.</p>
+        </li>
+        <li class="catalog__item catalog__item--desktop">
+          <picture>
+            <img class="catalog__item-foto" src="img/Abrau_durso_desktop.png" alt="Морская прогулка в Абрау-Дюрсо">
+          </picture>
+          <h3 class="catalog__subtitle">Морской круиз в Новороссийск&nbsp;<a class="catalog__subtitle-link" href="#"></a></h3>
+          <p class="catalog__item-route"><span class="item-route__subtitle">Маршрут: </span>Сочи-Абрау-Дюрсо</p>
+          <p class="catalog__item-duration"><span class="item-duration__subtitle">Маршрут: </span>11 ч. 0 мин.</p>
           <p class="catalog__item-price">14 800 руб.</p>
         </li>
       </ul>
@@ -123,19 +179,34 @@
         <button class="catalog-popup__button" type="button"></button>
         <div class="catalog-popup__wrapper">
           <div class="popup-images">
-            <img class="popup-main" src="img/popup-main_tablet.png">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/popup-main_desktop.png">
+              <img class="popup-main" src="img/popup-main_tablet.png">
+            </picture>
             <ul class="popup-images-list">
               <li class="popup-images-item">
-                <img class="popup-image" src="img/popup-first_tablet.png">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/popup-first_desktop.png">
+                  <img class="popup-image" src="img/popup-first_tablet.png">
+                </picture>
               </li>
               <li class="popup-images-item">
-                <img class="popup-image" src="img/popup-second_tablet.png">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/popup-second_desktop.png">
+                  <img class="popup-image" src="img/popup-second_tablet.png">
+                </picture>
               </li>
               <li class="popup-images-item">
-                <img class="popup-image" src="img/popup-third_tablet.png">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/popup-third_desktop.png">
+                  <img class="popup-image" src="img/popup-third_tablet.png">
+                </picture>
               </li>
               <li class="popup-images-item">
-                <img class="popup-image" src="img/popup-fourth_tablet.png">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/popup-fourth_desktop.png">
+                  <img class="popup-image" src="img/popup-fourth_tablet.png">
+                </picture>
               </li>
             </ul>
           </div>

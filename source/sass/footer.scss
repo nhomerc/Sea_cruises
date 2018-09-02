@@ -53,7 +53,7 @@
 
   font-size: 14px;
 }
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
@@ -86,5 +86,20 @@
   }
   .page-footer__phone, .page-footer__support {
     line-height: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .page-footer__wrapper {
+    width: 68.8px;
+    min-width: 1140px;
+  }
+  .page-footer__wrapper {
+    justify-content: flex-start;
+  }
+  .page-footer__list.hidden{
+    margin-right: 13%;
+  }
+  .page-footer__social-wrapper {
+    margin-right: 40%;
   }
 }
